@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="168" id="KGk-i7-Jjw" customClass="BalanceTableViewCell" customModule="OCBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="168"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AV4-88-aLl">
+                        <rect key="frame" x="0.0" y="10" width="349" height="101.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHd-EX-z53">
+                                <rect key="frame" x="0.0" y="0.0" width="349" height="101.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have  SGD 2320.23                          " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNS-AM-E9A">
+                                        <rect key="frame" x="10" y="10" width="329" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="You have  SGD 2320.23                          " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4n-hL-C0s">
+                                        <rect key="frame" x="10" y="40.5" width="329" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="You have  SGD 2320.23                          " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NR-xu-Lhz">
+                                        <rect key="frame" x="10" y="71" width="329" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="M4n-hL-C0s" secondAttribute="trailing" constant="10" id="3F0-kZ-FiH"/>
+                                    <constraint firstItem="M4n-hL-C0s" firstAttribute="top" secondItem="iNS-AM-E9A" secondAttribute="bottom" constant="10" id="4Xs-r7-UDE"/>
+                                    <constraint firstAttribute="trailing" secondItem="iNS-AM-E9A" secondAttribute="trailing" constant="10" id="4gn-sN-t2z"/>
+                                    <constraint firstItem="5NR-xu-Lhz" firstAttribute="top" secondItem="M4n-hL-C0s" secondAttribute="bottom" constant="10" id="KOK-Ke-qoH"/>
+                                    <constraint firstItem="M4n-hL-C0s" firstAttribute="leading" secondItem="FHd-EX-z53" secondAttribute="leading" constant="10" id="LiJ-Ci-1N4"/>
+                                    <constraint firstItem="iNS-AM-E9A" firstAttribute="leading" secondItem="FHd-EX-z53" secondAttribute="leading" constant="10" id="NPo-Tq-903"/>
+                                    <constraint firstAttribute="trailing" secondItem="5NR-xu-Lhz" secondAttribute="trailing" constant="10" id="QM9-9s-pUm"/>
+                                    <constraint firstAttribute="bottom" secondItem="5NR-xu-Lhz" secondAttribute="bottom" constant="10" id="aY9-EH-YtF"/>
+                                    <constraint firstItem="iNS-AM-E9A" firstAttribute="top" secondItem="FHd-EX-z53" secondAttribute="top" constant="10" id="cHe-tt-whu"/>
+                                    <constraint firstItem="5NR-xu-Lhz" firstAttribute="leading" secondItem="FHd-EX-z53" secondAttribute="leading" constant="10" id="xxz-UE-Kiy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your transaction history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiI-fU-DhP">
+                        <rect key="frame" x="10" y="132.5" width="359" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="SiI-fU-DhP" secondAttribute="trailing" constant="10" id="JFt-FO-bzE"/>
+                    <constraint firstItem="SiI-fU-DhP" firstAttribute="top" secondItem="AV4-88-aLl" secondAttribute="bottom" constant="21" id="QFq-lr-g1j"/>
+                    <constraint firstAttribute="bottom" secondItem="SiI-fU-DhP" secondAttribute="bottom" constant="15" id="Swn-kc-8Ti"/>
+                    <constraint firstItem="SiI-fU-DhP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="and-rp-nfW"/>
+                    <constraint firstItem="AV4-88-aLl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="d2A-kv-mXA"/>
+                    <constraint firstItem="AV4-88-aLl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="dPq-lc-oCc"/>
+                    <constraint firstAttribute="trailing" secondItem="AV4-88-aLl" secondAttribute="trailing" constant="30" id="kMd-zK-cJg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+            <connections>
+                <outlet property="accountHolderNameLabel" destination="5NR-xu-Lhz" id="ZJN-JD-dy6"/>
+                <outlet property="accountNoLabel" destination="M4n-hL-C0s" id="lHg-B0-ItH"/>
+                <outlet property="balanceLabel" destination="iNS-AM-E9A" id="dml-sj-vgX"/>
+                <outlet property="baseView" destination="FHd-EX-z53" id="amn-CP-XxC"/>
+            </connections>
+            <point key="canvasLocation" x="174.63768115942031" y="99.107142857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

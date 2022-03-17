@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardViewController" customModule="OCBC" customModuleProvider="target">
+            <connections>
+                <outlet property="logoutButton" destination="7tp-LV-5oU" id="Lks-UD-gmx"/>
+                <outlet property="makeTransferButton" destination="GN3-r4-Lkx" id="IX9-Ph-xdG"/>
+                <outlet property="tableView" destination="6am-s0-qbB" id="b70-fI-o3W"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" style="insetGrouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6am-s0-qbB">
+                    <rect key="frame" x="0.0" y="104" width="414" height="658"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tp-LV-5oU">
+                    <rect key="frame" x="342" y="69" width="52" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="pN6-Hr-rik"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Logout">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="logoutButtonAction:" destination="-1" eventType="touchUpInside" id="HEZ-pt-CKp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GN3-r4-Lkx">
+                    <rect key="frame" x="30" y="792" width="354" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="500-qe-nEc"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Make Transfer">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="makeTransferButtonAction:" destination="-1" eventType="touchUpInside" id="Y5u-LC-Vf8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="GN3-r4-Lkx" firstAttribute="top" secondItem="6am-s0-qbB" secondAttribute="bottom" constant="30" id="3lh-mS-AKm"/>
+                <constraint firstItem="GN3-r4-Lkx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="6nC-Av-eBm"/>
+                <constraint firstItem="6am-s0-qbB" firstAttribute="top" secondItem="7tp-LV-5oU" secondAttribute="bottom" id="EEe-qI-Uev"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7tp-LV-5oU" secondAttribute="trailing" constant="20" id="GAO-G5-nx8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GN3-r4-Lkx" secondAttribute="trailing" constant="30" id="QAa-j6-Zm6"/>
+                <constraint firstItem="6am-s0-qbB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XbI-H8-aEA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GN3-r4-Lkx" secondAttribute="bottom" constant="30" id="dtY-4s-2HE"/>
+                <constraint firstAttribute="trailing" secondItem="6am-s0-qbB" secondAttribute="trailing" id="fR9-pk-pAs"/>
+                <constraint firstItem="7tp-LV-5oU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="kkv-vH-Frh"/>
+            </constraints>
+            <point key="canvasLocation" x="99" y="261"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
