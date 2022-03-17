@@ -27,6 +27,10 @@ class DashboardViewController: UIViewController {
         super.viewDidLoad()
         keysArray = []
         setUpView()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         loadModel()
     }
 
